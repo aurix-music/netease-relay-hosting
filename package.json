@@ -1,13 +1,21 @@
 {
   "name": "netease-relay",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "start": "node relay.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "impit": "^0.14.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
   }
 }
